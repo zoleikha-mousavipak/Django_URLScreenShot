@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 import time
 from selenium import webdriver
-from myshots.models import MyScreen
+# from .models import *
 
 
 def shot_func():
@@ -25,8 +25,8 @@ def shot_func():
         myfile.close()
 
         # add to databse
-        myinstance = MyScreen(img=myimg)
-        myinstance.save()
+        # myinstance = MyScreen(img=myimg)
+        # myinstance.save()
 
     driver.quit()
     return
