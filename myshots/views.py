@@ -16,7 +16,7 @@ def shot_func():
         myimg = 'myscreen' + str(x) + '.png'
         screenshot = driver.save_screenshot('../media/myscreens/'+myimg)
 
-        # 1 per second is about 1000 per year
+        # 1 per second is about 1000 per month
         time.sleep(1)
 
         # create a file to collect images
